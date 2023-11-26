@@ -28,50 +28,48 @@ Labs are in-class exercises intended to get practice with coding or analysis wor
 - You will have your own repository (more in a minute)
 - Try to finish in class, but due in 1 week
 
-In this class, we will use
+In this class, we will use three key software tools: Julia, GitHub, and Quarto.
+We will generally also use the Visual Studio Code (VS Code) text editor, but you can use any text editor you like.
 
-1. Julia
-1. GitHub
-1. Quarto
-1. VS Code
+See [the Software Installation Guide](https://ceve-421-521.github.io/resources/setup.html) for more details and resources!
 
 ### Julia
 
-- Syntax
-    - Readable to computers and humans
-    - Closely parallels math notation
-- Designed for numerical and scientific computing
-- Fast! 
-    - "Two language problem" (all you need is Julia)
-    - Write intuitively
-    - Perfromant libraries are written in Julia (easier installation)
-- Open source
+We're using the Julia programming language in this course.
+Julia is a fast, modern, open-source programming language designed for numerical and scientific computing.
+
+We're using it for a few key reasons.
+First, the syntax is human-readable and closely parallels math notation, which reduces the cognitive burden of translating between conceptual and computational models.
+Second, it's fast, which means that Julia solves the "two language problem": you don't need to learn C or Fortran to dig under the hood and write fast code.
+Other great features include that it's open-source, which makes it reproducible and shareable, and it has a fantastic package manager.
+
+There are some great resources out there about why Julia is great.
+See posts by [Julia Data Science](https://juliadatascience.io/why_julia) or the [Julia Creators](https://julialang.org/blog/2012/02/why-we-created-julia/) (with [followup](https://www.julialang.org/blog/2022/02/10years/)).
 
 
 ### GitHub
 
-1. You need a GitHub account
-1. Code is stored in "repositories"
-1. `clone` a repository to your computer
-1. Make changes and `commit` them
-1. `push` your changes to GitHub
-1. Using GitHub classroom, instructors can view your code
+`git` is a software tool for version control that keeps track of changes to files over time.
+GitHub is a website that hosts git repositories and provides a web interface for interacting with them.
+
+To use GitHub, you'll need a GitHub account.
+Code on GitHub is stored in *repositories*.
+A simple workflow is to `clone` a repository to your computer, make changes, `commit` them, then `push` your changes to GitHub.
+
+We will also use GitHub classroom, which allows instructors to share templates and view your code.
 
 ### Quarto
 
-Quarto is a tool that allows you to combine text and code and create many types of output
-
-- This website is made with Quarto
-- You will use Quarto to create reports for labs
-    - Everything in one place
-    - No running code, save a figure to `Downloads`, copy into Word, then update your code and try to remember where to paste it
-- Reproducible
+Quarto is a tool that allows you to combine text and code and create many types of output.
+For example, this website is made with Quarto!
+You will use Quarto to create reports for labs.
+This lets you keep everything in one place -- no more running code, saving a figure to `Downloads`, copying into Word, then trying to remember where to paste the figure when you update the code.
 
 ### VS Code
 
-1. VS Code is a text editor
-    1. If you are an advanced user of another text editor, you can use that instead, but I recommend VS Code
-1. VS Code can work as a Julia IDE
+VS Code is a text editor.
+If you are an advanced user of another text editor, you can use that instead.
+However, VS Code is very nearly an officially supported IDE for Julia.
 
 ## Getting set up
 
