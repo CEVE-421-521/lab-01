@@ -22,6 +22,11 @@ jobs:
       # From https://github.com/julia-actions/setup-julia
       - name: Setup Julia
         uses: julia-actions/setup-julia@v1
+        with:
+          version: 1.9.4
+      
+      - name: Set up Julia environment
+        run: julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate(); Pkg.build("IJulia")'
 
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
 
