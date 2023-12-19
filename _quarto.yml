@@ -7,7 +7,6 @@ format:
     number-sections: true
     code-line-numbers: true
     colorlinks: true
-  
-  mainfont: "Fira Sans" 
+
 
 date-format: "ddd., MMM. D"
