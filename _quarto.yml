@@ -1,0 +1,13 @@
+format: 
+  pdf:
+    documentclass: article
+    fontsize: 11pt
+    geometry:
+      - margin=1in  
+    number-sections: true
+    code-line-numbers: true
+    colorlinks: true
+  
+  mainfont: "Fira Sans" 
+
+date-format: "ddd., MMM. D"
