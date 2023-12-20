@@ -5,7 +5,7 @@ on:
 name: Render and Publish
 
 jobs:
-  build-deploy:
+  render-pdf:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -19,6 +19,18 @@ jobs:
           # uncomment below and fill to pin a version
           # version: SPECIFIC-QUARTO-VERSION-HERE
 
+      
+      # install python so we can have Jupyter
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      # install Jupyter
+      - name: install Jupyter
+        run: pip install jupyter
+      
       # From https://github.com/julia-actions/setup-julia
       - name: Setup Julia
         uses: julia-actions/setup-julia@v1
@@ -28,32 +40,6 @@ jobs:
       - name: Set up Julia environment
         run: julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate(); Pkg.build("IJulia")'
 
-      # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-
-      # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
-      # the appropriate block below
-      
-      # - name: Publish to Netlify (and render)
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     target: netlify
-      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        
-      # - name: Publish to RStudio Connect (and render)
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     target: connect
-      #     CONNECT_SERVER: enter-the-server-url-here
-      #     CONNECT_API_KEY: ${{ secrets.CONNECT_API_KEY }} 
-
-      # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
-      # - name: Publish to GitHub Pages (and render) 
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     target: gh-pages
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
-      
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
