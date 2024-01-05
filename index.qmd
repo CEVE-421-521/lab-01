@@ -2,7 +2,7 @@
 title: "Lab 1: Software Installation"
 subtitle: "Julia, Quarto, GitHub"
 author: "CEVE 421/521" # TODO: add your name here
-jupyter: julia-1.9
+jupyter: julia-1.10
 date: 2024-01-12
 week: 1
 categories: [Lab]
@@ -94,7 +94,7 @@ The instructions can be found at the [JuliaUp GitHub repository](https://github.
 
 If your computer uses Windows, you can install Juliaup [from the Windows Store](https://www.microsoft.com/store/apps/9NJNWW8PVKMN).
 
-If you have a Mac, open a terminal (such as the Terminal app) and enter:
+If you have a Mac (or are using Linux), open a terminal (such as the Terminal app) and enter:
 
 ```shell
 curl -fsSL https://install.julialang.org | sh
@@ -102,11 +102,11 @@ curl -fsSL https://install.julialang.org | sh
 
 Once you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:
 ```shell
-julia add 1.9.4
-julia default 1.9.4
+julia add 1.10
+julia default 1.10
 ```
 
-This will install Julia 1.9.4 and make it the default version, which should maximize package compatibility throughout this course.
+This will install Julia 1.10 and make it the default version, which should maximize package compatibility throughout this course.
 Going forward, if you want to add new versions or change the default, you can [follow the Juliaup instructions](https://github.com/JuliaLang/juliaup#using-juliaup).
 
 ### Install VS Code
@@ -116,17 +116,17 @@ We will follow [this guide for setting up VS Code with Julia](https://www.julia-
 
 ::: {.callout-info}
 You can skip this section if you are an experienced programmer and already have a preferred IDE.
-Your IDE will likely have instructions for Julia and QUarto setup.
+Your IDE will likely have instructions for Julia and Quarto setup.
 ::: 
 
-You can download it [here](https://code.visualstudio.com/download); open the downloaded file to install.
+You can download VS Code [here](https://code.visualstudio.com/download); open the downloaded file to install.
 Make sure to select the correct version for your operating system.
 If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download.
 You can also use homebrew or your preferred package manager to install VS Code.
 
 #### VS Code Julia Extension
 
-Like many editors, VS Code is a modular system that can be extended with plugins.
+Like many IDEs, VS Code is a modular system that can be extended with plugins.
 We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we'll add the Quarto extension later).
 
 1. Open VS Code.
@@ -154,6 +154,13 @@ The first time you click one of these links, you will need to link your place on
 
 You can do everything that you will need to do for this course with GitHub directly through VS Code.
 The GitHub [desktop app](https://desktop.github.com/) is also great, or alternatively you may work directly through the terminal if you have prior experience.
+
+### GitHub Copilot (Optional)
+
+GitHub Copilot is an AI-powered tool that helps you write code.
+You can install it following instructions [here](https://github.com/features/copilot) 
+As described in the [quickstart guide](https://docs.github.com/en/copilot/quickstart), Copilot is free for students.
+Be sure to review the policy on AI language models in the [syllabus](/syllabus.qmd)!
 
 #### Install Git
 
