@@ -102,8 +102,8 @@ curl -fsSL https://install.julialang.org | sh
 
 Once you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:
 ```shell
-julia add 1.10
-julia default 1.10
+juliaup add 1.10
+juliaup default 1.10
 ```
 
 This will install Julia 1.10 and make it the default version, which should maximize package compatibility throughout this course.
