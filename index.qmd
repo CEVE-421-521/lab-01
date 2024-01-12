@@ -220,9 +220,8 @@ These will ensure that your installation is working smoothly!
     1. Type the backspace key to exit the package manager.
 1. Edit the `index.qmd` file to add your name and netID
 1. Render the document
-    1. Open the `solutions.qmd` file
+    1. Open the `index.qmd` file
     1. Open the *command palette* and run "Quarto: Preview". After some activity, a preview of the rendered document should open in VS Code. If you see something like `Browse at http://localhost:4200/index.html` you can open that link in your web browser to see the rendered document.
-    1. Check the box on line 46 or 47 of the `solutions.qmd` file to indicate that you were able to render the document. If you were unable to render the document, check the other box and seek help. Make sure the box check renders correctly in the preview.
     1. Render to PDF or Microsoft Word following the directions below.
 1. If you're still having trouble:
     1. Try running `build IJulia` in the Julia REPL's Pkg mode (type `]`)
