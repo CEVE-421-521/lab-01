@@ -3,9 +3,18 @@
 index.*
 !index.qmd
 
+template.*
+!template.qmd
+
+*.html
+*.ipynb
+*.pdf
+*.docx
+
 data/*
 .jupyter_cache/
 
 index_files/
+template_files/
 
 /.quarto/
