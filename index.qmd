@@ -100,7 +100,7 @@ If you have a Mac (or are using Linux), open a terminal (such as the Terminal ap
 curl -fsSL https://install.julialang.org | sh
 ```
 
-Once you install Juliaup, install Julia version 1.9 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:
+Once you install Juliaup, install Julia version 1.10 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:
 ```shell
 juliaup add 1.10
 juliaup default 1.10
